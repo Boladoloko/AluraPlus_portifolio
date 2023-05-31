@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root{
+    --branco-principal: #ffffff;
+    --cinza-secundario: #c0c0c0;
+    --botao-azul: #167BF7;
+    --cor-backgreound: #00030C;
+    --fonte-principal: 'Inter', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--cor-backgreound);
+    color:var(--branco-principal);
+    font-family: var(--fonte-principal);
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.container_caixa{
+    margin: 0 6em;
+}
+.principal{
+    background-image: url(../Assets/Background.png);/*coloca imagem de background, a tag "url(); tem a msm função que o "scr" de buscar arquivos no pc*/
+    background-repeat:no-repeat;/*impede que a imagem de fundo se repita*/
+    background-size: contain; /*faz com que a imagem preecha todo conteiner*/
+    align-items: center;
+    text-align: center; /*o "text-align" ele nao alinha só texto mas
+    mais sim tudo que esta dentro de lementos de bloco, e como o tudo
+    na section está por padrão com "display:block" tudo será alinhado*/
+}
+.principal_titulo{
+    color: var(--branco-principal);
+    font-size: 1.5em;
+    height: 700;
+}
+.principal_atention{
+    color: var(--cinza-secundario);
+    font-size: 0.75em;
+}
+.principal_img_combo{
+    margin: 1em 0 2em 0;
+}
+.principal_botton{
+    background-color: var(--botao-azul);
+    color: var(--cinza-secundario);
+    border-radius: 5px;
+    padding: 1em 3.5em; 
+    text-decoration: none;
+    height: 400;
+    display: block;
+    margin-bottom:1em; /*dá pra especificar onde vc quer o margem
+    seja top, right, left, ou bottom*/
+}
+.botton_secundario{
+    background-color:transparent;
+    border: 2px solid var(--branco-principal);
+    color: var(--cinza-secundario);
+    text-decoration: none;
+}
+/*------------------------------------------2 seção-------------------------------------------------*/
+.secundario{
+    align-items: center;
+    margin: 0 9em;
+}
+.secundario_img{
+    width: 80%;
+}
+.secundario_titulo{
+    font-size: 3em;
+    height: 700;
+    margin: 0.2em;
+}
+.secundario_paragrafo{
+    font-size: 1em;
+    color: var(--cinza-secundario);
+}
+/*------------------------------------------3 seção-------------------------------------------------*/
+.terciario{
+    align-items: center;
+    margin: 0 10em;
+}
+.terciario_img{
+    width: 80%;
+    margin-left: 3em;
+}
+.terciario_botton{
+    background-color: var(--botao-azul);
+    color: var(--cinza-secundario);
+    border-radius: 5px;
+    padding: 1em 3.5em; 
+    text-decoration: none;
+    height: 400;
+    display: inline-block;
+    margin-top: 1em;
+}
+/*---------------------------------------- 4 seção----------------------------------*/
+.cuaternario{
+    align-items: center;
+    margin: 0 5em;
+}
+.cuaternario_titulo{
+    font-size: 3em;
+}
+.cuaternario_paragrafo{
+    font-size: 1em;
+    color: var(--cinza-secundario);
+}
+.cuaternario_img{
+    width: 80%;
+}
+/* --------------------------------------Dispositivos------------------------------------ */
+.dispositivos{
+    text-align: center;
+}
+.dispositivos__lista{
+    display: flex; 
+    justify-content: center;
+    list-style-type: none; /*tira estilização da lista, assim como o "text-decoration"*/
+    margin: 3em 0;
+}
+.dispositivos_titulo{
+    font-size: 3em;
+    color: var(--branco-principal);
+}
+.lista__item{
+    font-size: 2em;
+    color: var(--branco-principal);
+}
+.rodape{
+    text-align: center;
+}
+.rodape_lista-links{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 2em;
+}
+.rodape_autorais{
+    font-family: var(--fonte-principal);
+    font-size: 0.875em;
+    height: 400;
+    margin: 2em 0;
+    color: var(--cinza-secundario);
+}
+.lista_links{
+    font-family: var(--fonte-principal);
+    font-size: 1em;
+    height: 400;
+    text-decoration: none;
+    margin-right: 1em;
+    color: var(--branco-principal);
+}
+.lista_links a:hover{
+    color: var(--botao-azul);
+}
+.lista_links a:active{
+    color: var(--botao-azul) ;
+}
+.rodape_image-logo{
+    width: auto;
+}
